@@ -7,7 +7,7 @@ import themes from '../styles/themes'
 
 import Home from '../pages/Home'
 import SearchServices from '../pages/SearchServices'
-import Welcome from '../pages/Welcome'
+import Contact from '../pages/Contact'
 
 const Tab = createBottomTabNavigator()
 
@@ -27,17 +27,6 @@ export default function Tabs() {
             }
         }}>
             <Tab.Screen 
-            name="Welcome" 
-            component={Welcome}
-            options={{
-                tabBarLabel: 'BOAS VINDAS',
-                tabBarIcon: ({size, color}) => (
-                    <Entypo name="back" size={size} color={color} />
-                )
-            }}
-            />
-
-            <Tab.Screen 
             name="Home" 
             component={Home}
             options={{
@@ -55,6 +44,17 @@ export default function Tabs() {
                 tabBarLabel: 'PESQUISAR',
                 tabBarIcon: ({size, color}) => (
                     <Feather name="search" size={size} color={color} />
+                )
+            }}
+            />
+
+            <Tab.Screen 
+            name="Contact" 
+            component={Contact}
+            options={{
+                tabBarLabel: 'Contato',
+                tabBarIcon: ({size, color}) => (
+                    <Entypo name="message" size={size} color={color} />
                 )
             }}
             />
