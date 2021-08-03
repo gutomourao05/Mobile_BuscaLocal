@@ -6,9 +6,9 @@ const styles = StyleSheet.create({
         width: '97%',
         height: 280,
         marginBottom: 20,
-        backgroundColor: 'white',
+        backgroundColor: themes.colors.colorBackgroundBox,
         borderWidth: 1,
-        borderColor: 'white',
+        borderColor: themes.colors.colorBackgroundBox,
         borderRadius: 10
     },
 

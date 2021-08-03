@@ -4,6 +4,7 @@ import { View, Text, TouchableOpacity } from 'react-native'
 import { Fontisto, AntDesign, MaterialCommunityIcons, Ionicons } from '@expo/vector-icons'
 
 import styles from './styles'
+import themes from '../../styles/themes'
 
 export default function Filters() {
     return(
@@ -21,19 +22,19 @@ export default function Filters() {
 
             <View style={styles.footer}>
                 <TouchableOpacity activeOpacity={0.7}>
-                    <Fontisto name="whatsapp" size={40} color="black" />
+                    <Fontisto name="whatsapp" size={40} color={themes.colors.colorText}/>
                 </TouchableOpacity>
 
                 <TouchableOpacity activeOpacity={0.7}>
-                <Ionicons name="md-mail-outline" size={40} color="black" />
+                <Ionicons name="md-mail-outline" size={40} color={themes.colors.colorText} />
                 </TouchableOpacity>
 
                 <TouchableOpacity activeOpacity={0.7}>
-                    <MaterialCommunityIcons name="map-marker-radius-outline" size={40} color="black" />
+                    <MaterialCommunityIcons name="map-marker-radius-outline" size={40} color={themes.colors.colorText} />
                 </TouchableOpacity>
 
                 <TouchableOpacity activeOpacity={0.7}>
-                    <AntDesign name="phone" size={40} color="black" />
+                    <AntDesign name="phone" size={40} color={themes.colors.colorText} />
                 </TouchableOpacity>
             </View>
 

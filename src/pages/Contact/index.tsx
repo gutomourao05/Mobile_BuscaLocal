@@ -2,10 +2,12 @@ import React from 'react'
 import { View, Image, Text, TouchableOpacity } from 'react-native'
 
 import styles from './styles'
+import themes from '../../styles/themes';
 
 import { Fontisto, AntDesign } from '@expo/vector-icons';
 
 import pix from '../../assets/pixInter.jpg'
+
 
 export default function Contact() {
     return(
@@ -19,9 +21,9 @@ export default function Contact() {
                 <View style={styles.containerText}>
                     <Text style={styles.pixTitle}>Chave Aleatória</Text>
                     <View style={styles.containerPixKey}>
-                        <Text>1e8cd37c-a42f-4eb7-b879-ac507655d8bc</Text>
+                        <Text style={styles.textPixKey}>1e8cd37c-a42f-4eb7-b879-ac507655d8bc</Text>
                         <TouchableOpacity onPress={() => {}}>
-                            <AntDesign name="copy1" size={24} color="black" />
+                            <AntDesign name="copy1" size={24} color={themes.colors.colorText} />
                         </TouchableOpacity>
                         
                     </View>
@@ -45,11 +47,11 @@ export default function Contact() {
 
                 <View style={styles.containerContact}>
                     <TouchableOpacity activeOpacity={0.7}>
-                        <Fontisto name="email" size={50} color="black" />
+                        <Fontisto name="email" size={50} color={themes.colors.colorText} />
                     </TouchableOpacity>
 
                     <TouchableOpacity activeOpacity={0.7}>
-                        <Fontisto name="whatsapp" size={50} color="black" />
+                        <Fontisto name="whatsapp" size={50} color={themes.colors.colorText} />
                     </TouchableOpacity>
                 </View>
             </View>

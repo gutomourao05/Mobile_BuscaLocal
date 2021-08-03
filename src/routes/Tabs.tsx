@@ -19,8 +19,8 @@ export default function Tabs() {
                 backgroundColor: themes.colors.backgroundTabs,
                 borderTopColor: 'transparent'
             },
-            activeTintColor: '#FFF',
-            inactiveTintColor: '#000',
+            activeTintColor: themes.colors.colorBackgroundBox,
+            inactiveTintColor: themes.colors.colorText,
             tabStyle: {
                 paddingTop: 5,
                 paddingBottom: 5

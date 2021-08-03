@@ -16,7 +16,7 @@ const styles = StyleSheet.create({
     containerQrcode: {
         width: 200,
         height: 200,
-        backgroundColor: 'white',
+        backgroundColor: themes.colors.colorBackgroundBox,
         marginTop: 55,
         marginBottom: 5
     },
@@ -41,12 +41,16 @@ const styles = StyleSheet.create({
         alignItems: "center"
     },
 
+    textPixKey: {
+        marginRight: 10
+    },
+
     containerInformation: {
         width: '95%',
         borderWidth: 1,
-        borderColor: 'white',
+        borderColor: themes.colors.colorBackgroundBox,
         borderRadius: 10,
-        backgroundColor: 'white',
+        backgroundColor: themes.colors.colorBackgroundBox,
         padding: 10,
     },
 

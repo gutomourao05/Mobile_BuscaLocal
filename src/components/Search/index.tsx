@@ -2,6 +2,7 @@ import React from 'react'
 import { View, TextInput, TouchableOpacity } from 'react-native'
 
 import styles from './styles'
+import themes from '../../styles/themes'
 
 import { Ionicons } from '@expo/vector-icons'
 
@@ -10,13 +11,13 @@ export default function Search() {
         <View style={styles.containerSearch}>
             <TextInput 
             style={styles.inputSearch} 
-            placeholderTextColor="#808080"
+            placeholderTextColor={themes.colors.colorPlaceholder}
             placeholder="O que você está procurando?" />
             <TouchableOpacity activeOpacity={0.5}>
                 <Ionicons 
                 name="search-circle-outline" 
                 size={50} 
-                color="black" />
+                color={themes.colors.colorText} />
             </TouchableOpacity>
         </View>
     )

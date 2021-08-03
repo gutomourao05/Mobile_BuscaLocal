@@ -11,10 +11,10 @@ const styles = StyleSheet.create({
     containerLogo: {
         width: '95%',
         height: 90,
-        backgroundColor: 'white',
+        backgroundColor: themes.colors.colorBackgroundBox,
         borderWidth: 1,
         borderRadius: 8,
-        borderColor: 'white',
+        borderColor: themes.colors.colorBackgroundBox,
     },
 
     containerAdvertisement: {
@@ -22,21 +22,21 @@ const styles = StyleSheet.create({
         height: 90,
         borderWidth: 1,
         borderRadius: 8,
-        borderColor: 'white',
+        borderColor: themes.colors.colorBackgroundBox,
         marginTop: 10,
-        backgroundColor: 'white',
+        backgroundColor: themes.colors.colorBackgroundBox,
     },
 
     line: {
         width: '100%',
         marginTop: 25,
         borderTopWidth: 1,
-        borderColor: 'white',
+        borderColor: themes.colors.colorBackgroundBox,
         alignItems: 'center'
     },
 
     textLine: {
-        color: 'white',
+        color: themes.colors.colorBackgroundBox,
         marginTop: -10,
         backgroundColor: themes.colors.background,
         paddingHorizontal: 10
@@ -54,9 +54,9 @@ const styles = StyleSheet.create({
     filter: {
         width: '28%',
         height: 90,
-        backgroundColor: 'white',
+        backgroundColor: themes.colors.colorBackgroundBox,
         borderWidth: 1,
-        borderColor: 'white',
+        borderColor: themes.colors.colorBackgroundBox,
         borderRadius: 5,
 
         justifyContent: 'center',
