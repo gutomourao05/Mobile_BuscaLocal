@@ -1,14 +1,14 @@
 {
   "expo": {
-    "name": "buscaLocal",
-    "slug": "buscaLocal",
+    "name": "BuscaLocal",
+    "slug": "BuscaLocal",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#4682B4"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
@@ -17,13 +17,17 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.augustodev.buscalocal"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+
+      "package": "com.augustodev.buscalocal"
+
     },
     "web": {
       "favicon": "./assets/favicon.png"

@@ -1,5 +1,6 @@
 import React from 'react'
-import { View, Image, Text, TouchableOpacity } from 'react-native'
+import { View, Image, Text, TouchableOpacity, Linking } from 'react-native'
+import * as Clipboard from 'expo-clipboard';
 
 import styles from './styles'
 import themes from '../../styles/themes';
@@ -22,7 +23,7 @@ export default function Contact() {
                     <Text style={styles.pixTitle}>Chave Aleatória</Text>
                     <View style={styles.containerPixKey}>
                         <Text style={styles.textPixKey}>1e8cd37c-a42f-4eb7-b879-ac507655d8bc</Text>
-                        <TouchableOpacity onPress={() => {}}>
+                        <TouchableOpacity onPress={() => Clipboard.setString('1e8cd37c-a42f-4eb7-b879-ac507655d8bc')}>
                             <AntDesign name="copy1" size={24} color={themes.colors.colorText} />
                         </TouchableOpacity>
                         
@@ -33,7 +34,7 @@ export default function Contact() {
             <View style={styles.containerInformation}>
                 <Text style={styles.textInformation}>
                 Esse App foi criado com a finalidade de ajudar o comércio e prestadores de serviços na região de Piraquara.
-                Fazendo cadastro, é uma forma do cliente encontrarem com mais facilidade seus serviços e produtos.
+                Fazendo cadastro, é uma forma dos clientes encontrarem com mais facilidade seus serviços e produtos.
                 </Text>
 
                 <Text style={styles.textInformation}>
@@ -42,15 +43,21 @@ export default function Contact() {
                 </Text>
 
                 <Text style={styles.textInformation}>
-                    Se você é comerciante ou prestador de serviços é quer cadastrar sua empresa ou serviços logo a baixo está o WhatsApp e E-mail para contato, sugestões ou reclamações.
+                    Se você é comerciante ou prestador de serviços e quer cadastrar sua empresa ou serviços estou disponibilizando logo a baixo o WhatsApp e E-mail para contato, sugestões ou reclamações.
                 </Text>
 
                 <View style={styles.containerContact}>
-                    <TouchableOpacity activeOpacity={0.7}>
+                    <TouchableOpacity 
+                    activeOpacity={0.7}
+                    onPress={() => Linking.openURL('mailto:gutomourao05@gmail.com')}
+                    >
                         <Fontisto name="email" size={50} color={themes.colors.colorText} />
                     </TouchableOpacity>
 
-                    <TouchableOpacity activeOpacity={0.7}>
+                    <TouchableOpacity 
+                    activeOpacity={0.7}
+                    onPress={() => Linking.openURL('https://api.whatsapp.com/send?phone=5541988914703')}
+                    >
                         <Fontisto name="whatsapp" size={50} color={themes.colors.colorText} />
                     </TouchableOpacity>
                 </View>

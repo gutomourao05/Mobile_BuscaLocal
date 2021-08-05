@@ -56,7 +56,7 @@ const styles = StyleSheet.create({
 
     textInformation: {
         textAlign: 'justify',
-        fontSize: 13
+        fontSize: 14
     },
 
     containerContact: {

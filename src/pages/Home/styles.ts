@@ -15,16 +15,41 @@ const styles = StyleSheet.create({
         borderWidth: 1,
         borderRadius: 8,
         borderColor: themes.colors.colorBackgroundBox,
+
+        alignItems: 'center',
+        justifyContent: 'center'
     },
 
     containerAdvertisement: {
+        flexDirection: 'row',
         width: '95%',
-        height: 90,
+        height: 100,
         borderWidth: 1,
         borderRadius: 8,
         borderColor: themes.colors.colorBackgroundBox,
         marginTop: 10,
         backgroundColor: themes.colors.colorBackgroundBox,
+        justifyContent: 'space-around',
+        alignItems: 'center'
+    },
+
+    containerTextAdvertisement: {
+        alignItems: 'center'
+    },
+
+    titleAdvertisement: {
+        fontSize: 17,
+        fontWeight: 'bold'
+    },
+
+    textAdvertisement: {
+        fontSize: 15
+    },
+
+    textAdvertisementPress: {
+        fontSize: 15,
+        fontWeight: 'bold',
+        color: themes.colors.backgroundTabs
     },
 
     line: {

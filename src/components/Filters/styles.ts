@@ -8,8 +8,8 @@ const styles = StyleSheet.create({
         marginBottom: 20,
         backgroundColor: themes.colors.colorBackgroundBox,
         borderWidth: 1,
-        borderColor: themes.colors.colorBackgroundBox,
-        borderRadius: 10
+        borderColor: themes.colors.backgroundTabs,
+        borderRadius: 10,
     },
 
     header: {
@@ -22,12 +22,12 @@ const styles = StyleSheet.create({
 
     headerTitle: {
         fontSize: 20,
-        fontWeight: '600'
+        fontWeight: 'bold'
     },
 
     main: {
         flex: 1,
-        alignItems: 'center'
+        alignItems: 'center',
     },
 
     textServices: {
