@@ -1,18 +1,20 @@
 import React from 'react'
 import { View, TouchableOpacity, Text, ScrollView, Image, Linking } from 'react-native'
+import { useNavigation } from '@react-navigation/native';
 
 import styles from './styles'
 import themes from '../../styles/themes';
 
 import { Fontisto, Entypo, FontAwesome, FontAwesome5, MaterialIcons, MaterialCommunityIcons } from '@expo/vector-icons';
 
+import logo from '../../assets/logo.png'
+
 // Components
 import Search from '../../components/Search';
 
-import logo from '../../assets/logo.png'
+export default function Home() {
+    const navigation = useNavigation()
 
-
-export default function Home({ navigation }) {
     return(
         <View style={styles.container}>
 

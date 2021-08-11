@@ -21,7 +21,8 @@ type Props = {
     latitude: string
 }
 
-export default function Filters({ zipCode, road, district, city, numberPlace, nameCompany, showTypeServices, descriptionServices, email, phone, longitude, latitude   } : Props) {
+export default function Filters({ zipCode, road, district, city, numberPlace, nameCompany, showTypeServices, descriptionServices, email, phone, 
+    longitude, latitude   } : Props) {
     return(
         <View style={styles.container}>
 

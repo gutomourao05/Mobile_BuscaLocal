@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, ReactNode } from 'react'
 import { View, ScrollView, ActivityIndicator } from 'react-native'
+import { RouteProp } from '@react-navigation/native'
 
 import styles from './styles'
 
@@ -10,10 +11,31 @@ import Search from '../../components/Search'
 import Filters from '../../components/Filters'
 import themes from '../../styles/themes'
 
-export default function SearchServices({ route }){  
+type DataProps =   [{
+    id: number,
+        zip_code: string,
+        road: string,
+        district: string,
+        city: string,
+        number_place: string,
+        name_company: string,
+        show_type_services: string,
+        descriptionServices: string,
+        email: string,
+        phone: string,
+        longitude: string,
+        latitude: string,
+}]
+
+
+type Props = {
+    route: RouteProp<{params: {search: string}}, 'params' >,
+}
+
+export default function SearchServices({ route }: Props){  
 
     const search = route.params?.search
-    const [resultData, setResultDate] = useState([])
+    const [resultData, setResultDate] = useState<DataProps>([] as unknown as DataProps)
     const [load, setLoad] = useState(false)
 
     useEffect(() => {
@@ -28,7 +50,7 @@ export default function SearchServices({ route }){
                     setResultDate(response.data)
                     setLoad(false)
                 })
-                .catch(error => {
+                .catch(error => { 
                     console.log(error)
                 })
             }
@@ -46,21 +68,21 @@ export default function SearchServices({ route }){
                 {
                     load ? <ActivityIndicator size='large' color={themes.colors.colorBackgroundBox}/> :
 
-                    resultData.map(result => (
+                    resultData.map((resultData) => (
                         <Filters 
-                        key={result.id}
-                        zipCode={result.zip_code}
-                        road={result.road}
-                        district={result.district}
-                        city={result.city}
-                        numberPlace={result.number_place}
-                        nameCompany={result.name_company}
-                        showTypeServices={result.show_type_services}
-                        descriptionServices={result.descriptionServices}
-                        email={result.email}
-                        phone={result.phone}
-                        longitude={result.longitude}
-                        latitude={result.latitude}
+                        key={resultData.id}
+                        zipCode={resultData.zip_code}
+                        road={resultData.road}
+                        district={resultData.district}
+                        city={resultData.city}
+                        numberPlace={resultData.number_place}
+                        nameCompany={resultData.name_company}
+                        showTypeServices={resultData.show_type_services}
+                        descriptionServices={resultData.descriptionServices}
+                        email={resultData.email}
+                        phone={resultData.phone}
+                        longitude={resultData.longitude}
+                        latitude={resultData.latitude}
                         />
                     ))
                 }
