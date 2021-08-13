@@ -1,4 +1,4 @@
-# Busca Local 
+# Mobile - Busca Local 
 [![NPM](https://img.shields.io/npm/l/react)](https://github.com/gutomourao05/App_React-Native_BuscaLocal/blob/main/LICENSE) 
 
 # Sobre o projeto
