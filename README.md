@@ -8,7 +8,7 @@ Busca Local é uma aplicação mobile construída para Portifólio.
 O App consiste em busca de serviços na região metropolitana onde moro.
 
 ## Layout mobile
-![Mobile 1](https://github.com/acenelio/assets/raw/main/sds1/mobile1.png) ![Mobile 2](https://github.com/acenelio/assets/raw/main/sds1/mobile2.png)
+![Mobile 1](https://github.com/gutomourao05/App_React-Native_BuscaLocal/blob/main/assets/pageHome.png) ![Mobile 2](https://github.com/gutomourao05/App_React-Native_BuscaLocal/blob/main/assets/pageSearchServices.png)
 
 # Tecnologias utilizadas
 
@@ -19,20 +19,20 @@ O App consiste em busca de serviços na região metropolitana onde moro.
 
 # Como executar o projeto
 
-## Front end web
+## Mobile
 
 ```bash
 # clonar repositório
-git clone https://github.com/devsuperior/sds1-wmazoni
+git clone https://github.com/gutomourao05/App_React-Native_BuscaLocal
 
 # entrar na pasta do projeto front end web
-cd front-web
+cd App_React-Native_BuscaLocal
 
 # instalar dependências
 yarn install
 
 # executar o projeto
-yarn start
+expo start
 ```
 
 # Autor
