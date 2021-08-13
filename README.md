@@ -15,7 +15,7 @@ O App consiste em busca de serviços na região metropolitana onde moro.
 # Tecnologias utilizadas
 
 ## Mobile
-- Javascript
+- Typescript
 - React Native
 - Expo
 
