@@ -8,7 +8,9 @@ Busca Local é uma aplicação mobile construída para Portifólio.
 O App consiste em busca de serviços na região metropolitana onde moro.
 
 ## Layout mobile
-![Mobile 1](https://github.com/gutomourao05/App_React-Native_BuscaLocal/blob/main/assets/pageHome.png) ![Mobile 2](https://github.com/gutomourao05/App_React-Native_BuscaLocal/blob/main/assets/pageSearchServices.png)
+
+<span> <img src="https://github.com/gutomourao05/App_React-Native_BuscaLocal/blob/main/assets/pageHome.png" width="250" height="500"> </span>
+<img src="https://github.com/gutomourao05/App_React-Native_BuscaLocal/blob/main/assets/pageSearchServices.png" width="250" height="500">
 
 # Tecnologias utilizadas
 
